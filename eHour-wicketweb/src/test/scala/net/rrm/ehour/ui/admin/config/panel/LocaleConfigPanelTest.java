@@ -23,6 +23,7 @@ import net.rrm.ehour.ui.admin.config.MainConfigBackingBean;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.util.tester.FormTester;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
@@ -33,7 +34,7 @@ import static org.mockito.Mockito.verify;
  * @author Thies Edeling (thies@te-con.nl)
  */
 public class LocaleConfigPanelTest extends AbstractMainConfigTest {
-    @Test
+	@Ignore @Test
     public void shouldSubmit() {
         startPage();
 
