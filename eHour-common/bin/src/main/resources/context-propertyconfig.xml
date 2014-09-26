@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <!-- Explicity define EnvFileSystemResource rather than have Spring guessing it wrong -->
+    <bean id="confResource" class="net.rrm.ehour.util.EnvFileSystemResource">
+        <constructor-arg value="${EHOUR_HOME}/conf/ehour.properties" />
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" ref="confResource" />
+    </bean>
+</beans>
