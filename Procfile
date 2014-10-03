@@ -1,1 +1,0 @@
-web: java -Ddb.url={TO_BE_FILLED_IN} -Ddb.username={TO_BE_FILLED_IN} -Ddb.password={TO_BE_FILLED_IN} -DEHOUR_HOME=eHour-war/target/ehour-1.4.2-SNAPSHOT -jar eHour-war/target/dependency/webapp-runner.jar --port $PORT --session-store memcache  --path /ehour eHour-war/target/ehour-1.4.2-SNAPSHOT/app/ehour-1.4.2-SNAPSHOT.war
